@@ -1,0 +1,73 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $background-color;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    display: block;
+    font-family: 'Raleway';
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $white-text-color;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__thumb {
+  margin-right: 70px;
+}
+
+.logo--wrap {
+  color: $brand-color;
+}
+
+.footer__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+
+.footer__desc {
+  color: $white-text-color;
+  font-size: 14px;
+  line-height: 1.46;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  margin-bottom: 9px;
+}
+
+.footer__list.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__link:link {
+  text-decoration: $off-text-decoration;
+  color: $mail-color;
+
+  &:active {
+    text-decoration: $off-text-decoration;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover {
+    text-decoration: $off-text-decoration;
+    color: $brand-color;
+  }
+
+  &:focus {
+    text-decoration: $off-text-decoration;
+    color: $brand-color;
+  }
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}

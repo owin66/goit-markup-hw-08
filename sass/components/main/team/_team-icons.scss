@@ -1,0 +1,34 @@
+.icon-team__list {
+  display: flex;
+
+  margin-top: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-team__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icon-team__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(175, 177, 184, 1);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+    color: $color-icon;
+  }
+}
+
+.icon-team__contact {
+  fill: currentColor;
+}

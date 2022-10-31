@@ -1,0 +1,45 @@
+.btn-list {
+  padding-bottom: 0;
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 50px;
+}
+.btn-list .btn-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-list__button {
+  border: none;
+  background: $back-color-but;
+  color: $product-text-color;
+  border-color: $white-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $brand-color;
+    color: $white-text-color;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.section .middle {
+  padding-bottom: 0;
+}

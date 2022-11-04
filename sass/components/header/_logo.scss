@@ -4,9 +4,21 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: $product-text-color;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
+
+  @media screen and(max-width:767px) {
+    display: block;
+    padding-bottom: 16px;
+  }
+  @media screen and(min-width:768px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+  @media screen and(min-width:1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 .logo--web {
   color: $brand-color;

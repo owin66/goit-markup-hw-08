@@ -1,21 +1,30 @@
 .navigation {
-  display: flex;
+  @media screen and(min-width:480px) {
+    display: none;
+  }
+  @media screen and(min-width:768px) {
+    display: flex;
+  }
 }
 
 .navigation__item:not(:last-child) {
-  margin-right: 50px;
+  @media screen and(min-width:768px) {
+    margin-right: 50px;
+  }
 }
 
 .navigation__link {
-  position: relative;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: $product-text-color;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+  @media screen and(min-width:768px) {
+    margin-right: 50px;
+    position: relative;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $product-text-color;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
   &:active,
   &:focus,
   &:hover {

@@ -1,10 +1,12 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 @import './base/normalize';
+
 @import './components/container';
 @import './components/title';
 @import './components/header/main-header';
 @import './components/header/navigation';
+
 @import './components/header/logo';
 @import './components/header/header-contacts';
 @import './components/main/hero';

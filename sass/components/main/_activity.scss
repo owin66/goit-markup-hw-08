@@ -1,7 +1,16 @@
 .activity__list {
-  display: flex;
-  justify-content: center;
-  list-style-type: $off-list-style-type;
+  @media screen and(min-width:480px) {
+    display: none;
+  }
+
+  @media screen and(min-width:768px) {
+  }
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: center;
+    list-style-type: $off-list-style-type;
+  }
 }
 
 .activity__item {

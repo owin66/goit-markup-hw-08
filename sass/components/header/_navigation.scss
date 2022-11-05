@@ -15,7 +15,6 @@
 
 .navigation__link {
   @media screen and(min-width:768px) {
-    margin-right: 50px;
     position: relative;
     display: block;
     padding-top: 32px;
@@ -29,6 +28,10 @@
   &:focus,
   &:hover {
     color: $brand-color;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 50px;
   }
 }
 

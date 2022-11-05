@@ -181,19 +181,42 @@
         <h2 class="title hiden">Чим ми займаємося</h2>
         <ul class="activity__list">
           <li class="activity__item">
-            <img src="./images/computer.jpg" alt="computer" width="370" height="294" />
+            <picture>
+              <source srcset="
+                    ./images/Desktop/img-1-desktop.jpg    1x,
+                    ./images/Desktop/img-1-desktop@2x.jpg 2x
+                  " />
+            </picture>
+            <img
+                src="./images/Desktop/img-1-desktop.jpg"
+                alt="computer"
+                width="370"
+                height="294"
+              />
             <div class="activity__container">
               <p class="activity__description">Десктопні додатки</p>
             </div>
           </li>
           <li class="activity__item">
-            <img src="./images/phone.jpg" alt="phone" width="370" height="294" />
+            <picture>
+              <source srcset="
+                    ./images/Desktop/img-2-desktop.jpg    1x,
+                    ./images/Desktop/img-2-desktop@2x.jpg 2x
+                  " />
+            </picture>
+            <img src="./images/Desktop/img-2-desktop.jpg " alt="phone" width="370" height="294" />
             <div class="activity__container">
               <p class="activity__description">Мобільні додатки</p>
             </div>
           </li>
           <li class="activity__item">
-            <img src="./images/hand.jpg" alt="tablet" width="370" height="294" />
+            <picture>
+              <source srcset="
+                    ./images/Desktop/img-3-desktop.jpg    1x,
+                    ./images/Desktop/img-3-desktop@2x.jpg 2x
+                  " />
+            </picture>
+            <img src="./images/Desktop/img-3-desktop.jpg" alt="tablet" width="370" height="294" />
             <div class="activity__container">
               <p class="activity__description">Дизайнерські рішення</p>
             </div>
@@ -209,7 +232,23 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__thumb">
-            <img src="./images/spectacles.jpg" alt="man" width="270" height="260" class="team__img"/>
+            <picture>
+              <source srcset="./images/Desktop/igor.jpg 1x, ./images/Desktop/igor@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/ihor-tablet.jpg 1x, ./images/tablet/ihor-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/mobile/ihor-mobile.jpg 1x, ./images/mobile/ihor-mobile@2x.jpg 2x"
+                media="(min-width: 280px)" />
+
+              <img
+                  src="./images/mobile/ihor-mobile.jpg"
+                  alt="man"
+                  width="270"
+                  height="260"
+                  class="team__img"
+                />
+            </picture>
+
             <div class="team__container">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__job" lang="en">Product Designer</p>
@@ -242,7 +281,22 @@
             </div>
           </li>
           <li class="team__thumb">
-            <img src="./images/woman.jpg" alt="man" width="270" height="260" class="team__img"/>
+            <picture>
+              <source srcset="./images/Desktop/olga.jpg 1x, ./images/Desktop/olga@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/olha-tablet.jpg 1x, ./images/tablet/olha-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/mobile/olha-mobile.jpg 1x, ./images/mobile/olha-mobile@2x.jpg 2x"
+                media="(min-width: 280px)" />
+
+              <img
+                  src="./images/mobile/olha-mobile.jpg"
+                  alt="man"
+                  width="270"
+                  height="260"
+                  class="team__img"
+                />
+            </picture>
             <div class="team__container">
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__job" lang="en">Frontend Developer</p>
@@ -275,7 +329,22 @@
             </div>
           </li>
           <li class="team__thumb">
-            <img src="./images/man_1.jpg" alt="man" width="270" height="260" class="team__img"/>
+            <picture>
+              <source srcset="./images/Desktop/olga.jpg 1x, ./images/Desktop/olga@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="./images/tablet/olha-tablet.jpg 1x, ./images/tablet/olha-tablet@2x.jpg 2x"
+                media="(min-width: 768px)" />
+              <source srcset="./images/mobile/olha-mobile.jpg 1x, ./images/mobile/olha-mobile@2x.jpg 2x"
+                media="(min-width: 280px)" />
+              <img
+                  src="./images/mobile/olha-mobile.jpg"
+                  alt="man"
+                  width="270"
+                  height="260"
+                  class="team__img"
+                />
+            </picture>
+
             <div class="team__container">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__job" lang="en">Marketing</p>
@@ -308,7 +377,26 @@
             </div>
           </li>
           <li class="team__thumb">
-            <img src="./images/man_3.jpg" alt="man" width="270" height="260" class="team__img"/>
+            <picture>
+              <source srcset="./images/Desktop/mykola.jpg 1x, ./images/Desktop/mykola@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+              <source srcset="
+                    ./images/tablet/mykola-tablet.jpg    1x,
+                    ./images/tablet/mykola-tablet@2x.jpg 2x
+                  " media="(min-width: 768px)" />
+              <source srcset="
+                    ./images/mobile/mykola-mobile.jpg    1x,
+                    ./images/mobile/mykola-mobile@2x.jpg 2x
+                  " media="(min-width: 280px)" />
+
+              <img
+                  src="./images/man_3.jpg"
+                  alt="man"
+                  width="270"
+                  height="260"
+                  class="team__img"
+                />
+            </picture>
             <div class="team__container">
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__job" lang="en">UI Designer</p>

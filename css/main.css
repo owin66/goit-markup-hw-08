@@ -463,21 +463,23 @@ img {
   }
 }
 
-.order {
-  max-width: 480px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 118px;
-  padding-bottom: 60px;
-  text-align: center;
-  background: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero.png");
-  background-position: center;
-  background-position: center;
-  background-repeat: no-repeat;
+@media screen and (min-width: 480px) {
+  .order {
+    max-width: 480px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+    padding-bottom: 60px;
+    text-align: center;
+    background: #2f303a;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero.png");
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .order {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero@2x.png");
     background-position: center;
@@ -485,34 +487,31 @@ img {
     background-size: cover;
   }
 }
-@media screen and (max-width: 365px) {
-  .order {
-    padding: 100px 10px;
-  }
-}
-.order__text {
-  box-sizing: border-box;
-  margin: 0 auto 30px auto;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-weight: 900;
-  line-height: 1.36;
-  color: #ffffff;
-  font-size: 26px;
-}
 @media screen and (min-width: 480px) {
   .order__text {
-    width: 360px;
-    height: 84px;
+    box-sizing: border-box;
+    margin: 0 auto 30px auto;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.36;
+    color: #ffffff;
+    font-size: 26px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (min-width: 480px) {
   .order__text {
     width: 360px;
     height: 84px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .order__text {
+    width: 360px;
+    height: 84px;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 1200px) {
   .order__text {
     width: 696px;
     height: 120px;
@@ -544,7 +543,7 @@ img {
 @media screen and (min-width: 768px) {
   .order {
     display: block;
-    max-width: 750px;
+    max-width: 768px;
     height: 400px;
     text-align: center;
     background: #2f303a;

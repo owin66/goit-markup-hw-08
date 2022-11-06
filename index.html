@@ -19,9 +19,9 @@
   <!-- HEADER -->
 
   <header class="header">
-    <div class="header__container container">
-      <a href="#" class="header__logo logo"><span class="logo--wrap" lang="en">Web</span>Studio</a>
-
+    <div class="header__container">
+      <a href="#" class="header__logo logo">
+        <span class="logo--wrap" lang="en">Web</span>Studio</a>
 
       <button class="mobile-menu__btn" type="button" data-menu-open>
         <svg width="40" height="40" aria-label="Перемикач">
@@ -79,11 +79,11 @@
         </div>
       </div>
 
-
       <nav>
         <ul class="header__navigation navigation">
           <li class="navigation__item">
-            <a href="./index.html" class="navigation__link"><span class="studio">Студія</span></a>
+            <a href="./index.html" class="navigation__link navigation__link--selected"><span
+                class="studio">Студія</span></a>
           </li>
           <li class="navigation__item">
             <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
@@ -119,8 +119,7 @@
   <!-- MAIN -->
 
   <main>
-    <section class=" order">
-
+    <section class="order">
       <h1 class="order__text">Ефективні рішення для вашого бізнесу</h1>
       <button type="button" class="order__button" data-modal-open>Замовити послугу</button>
     </section>
@@ -164,6 +163,7 @@
             <textarea class="field__textarea" name="textarea" id="textarea" rows="8"
               placeholder="Введіть текст"></textarea>
           </div>
+
           <label class="custom-checkbox" for="checkbox">
             <input class="custom-checkbox__input" id="checkbox" type="checkbox" />
             <svg class="custom-checkbox__icon" width="16" height="16">
@@ -176,8 +176,6 @@
         </form>
       </div>
     </div>
-
-
 
     <!-- ADVANTAGES -->
 
@@ -302,8 +300,7 @@
               <img
                   src="./images/mobile/ihor-mobile.jpg"
                   alt="man"
-                  width="270"
-                  height="260"
+
                   class="team__img"
                 />
             </picture>
@@ -351,8 +348,7 @@
               <img
                   src="./images/mobile/olha-mobile.jpg"
                   alt="man"
-                  width="270"
-                  height="260"
+
                   class="team__img"
                 />
             </picture>
@@ -401,36 +397,36 @@
                               " media="(min-width: 280px)" />
 
               <img
-                              class="teammate__img"
+
                               src="./images/mobile/mykhailo-mobile.jpg"
                               alt="This is Mykola"
+                            class="team__img"
                             />
             </picture>
-
             <div class="team__container">
-              <h3 class="team__name">Микола Тарасов</h3>
-              <p class="team__job" lang="en">Marketing</p>
+              <h3 class="team__name">Ольга Рєпіна</h3>
+              <p class="team__job" lang="en">Frontend Developer</p>
               <ul class="icon-team__list">
                 <li class="icon-team__item">
-                  <a href="https://www.instagram.com/" target="_blank" class="icon-team__link"><svg
+                  <a href="https://www.instagram.com/" class="icon-team__link" target="_blank"><svg
                       class="icon-team__contact" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2-1"></use>
                     </svg></a>
                 </li>
                 <li class="icon-team__item">
-                  <a href="https://twitter.com/" target="_blank" class="icon-team__link"><svg class="icon-team__contact"
+                  <a href="https://twitter.com/" class="icon-team__link" target="_blank"><svg class="icon-team__contact"
                       width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1-1"></use>
                     </svg></a>
                 </li>
                 <li class="icon-team__item">
-                  <a href="https://www.facebook.com" target="_blank" class="icon-team__link"><svg
+                  <a href="https://www.facebook.com" class="icon-team__link" target="_blank"><svg
                       class="icon-team__contact" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1-1"></use>
                     </svg></a>
                 </li>
                 <li class="icon-team__item">
-                  <a href="https://www.linkedin.com/" target="_blank" class="icon-team__link"><svg
+                  <a href="https://www.linkedin.com/" class="icon-team__link" target="_blank"><svg
                       class="icon-team__contact" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1-1"></use>
                     </svg></a>
@@ -452,14 +448,15 @@
                               " media="(min-width: 280px)" />
 
               <img
-                              class="teammate__img"
+                              class="team__img"
                               src="./images/mobile/mykhailo-mobile.jpg"
                               alt="This is Mykhailo"
+
                             />
             </picture>
             <div class="team__container">
-              <h3 class="team__name">Михайло Єрмаков</h3>
-              <p class="team__job" lang="en">UI Designer</p>
+              <h3 class="team__name">Ольга Рєпіна</h3>
+              <p class="team__job" lang="en">Frontend Developer</p>
               <ul class="icon-team__list">
                 <li class="icon-team__item">
                   <a href="https://www.instagram.com/" class="icon-team__link" target="_blank"><svg
@@ -489,6 +486,9 @@
             </div>
           </li>
         </ul>
+      </div>
+      </li>
+      </ul>
       </div>
     </section>
 

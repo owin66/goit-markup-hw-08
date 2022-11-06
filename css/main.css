@@ -541,35 +541,6 @@ img {
   background-color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
-  .order {
-    display: block;
-    max-width: 750px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background: #2f303a;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .order {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet@2x.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 768px) {
-  .order__text {
-    width: 360px;
-    height: 84px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .order {
     max-width: 1600px;

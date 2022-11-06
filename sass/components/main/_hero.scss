@@ -74,10 +74,8 @@
   &__btn:active {
     background-color: $brand-color;
   }
-}
 
-@media screen and (min-width: 768px) {
-  .order {
+  @media screen and (min-width: 768px) {
     display: block;
     max-width: 750px;
     height: 400px;
@@ -105,10 +103,8 @@
       height: 84px;
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .order {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;

@@ -12,7 +12,6 @@
     url('../images/mobile/hero.png');
   background-position: center;
   background-repeat: no-repeat;
-
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/mobile/hero@2x.png');
@@ -74,6 +73,37 @@
   }
   &__btn:active {
     background-color: $brand-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order {
+    display: block;
+    max-width: 750px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    background: $background-color;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tablet/hero-tablet.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/tablet/hero-tablet@2x.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__text {
+      width: 360px;
+      height: 84px;
+    }
   }
 }
 

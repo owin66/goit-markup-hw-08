@@ -5,6 +5,7 @@
   @media screen and(min-width:768px) and(max-width:1199px) {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
   }
   @media screen and(min-width:1200px) {
     display: flex;
@@ -60,11 +61,6 @@
 
 .navigation__link-contacts {
   color: $background-text-color;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 
   display: inline-flex;
   transition-property: color;
@@ -78,12 +74,23 @@
 
   @media screen and(min-width:768px) {
     display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
   }
 
   @media screen and(min-width:1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
     display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
   }
 }
 .navigation__link-contacts:nth-child(1) {

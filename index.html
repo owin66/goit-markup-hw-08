@@ -21,6 +21,65 @@
   <header class="header">
     <div class="header__container container">
       <a href="#" class="header__logo logo"><span class="logo--wrap" lang="en">Web</span>Studio</a>
+
+
+      <button class="mobile-menu__btn" type="button" data-menu-open>
+        <svg width="40" height="40" aria-label="Перемикач">
+          <use class="icon-menu" href="./images/icons.svg#icon-menu-btn"></use>
+        </svg>
+      </button>
+
+      <!-- MOBILE_MENU -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn mobile-menu__btn" data-menu-close>
+            <svg width="40" height="40" aria-label="Перемикач">
+              <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link current" href="">Студія</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Контакти</a>
+            </li>
+          </ul>
+          <div class="mobile-menu__down-wrapp">
+            <ul class="mobile-contacts__list">
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link mobile-contacts__link--phone" href="tel:+380961111111">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="mobile-social__list">
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Instagram</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">Facebook</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
       <nav>
         <ul class="header__navigation navigation">
           <li class="navigation__item">
@@ -330,19 +389,22 @@
           </li>
           <li class="team__thumb">
             <picture>
-              <source srcset="./images/Desktop/olga.jpg 1x, ./images/Desktop/olga@2x.jpg 2x"
+              <source srcset="./images/Desktop/mykola.jpg 1x, ./images/Desktop/mykola@2x.jpg 2x"
                 media="(min-width: 1200px)" />
-              <source srcset="./images/tablet/olha-tablet.jpg 1x, ./images/tablet/olha-tablet@2x.jpg 2x"
-                media="(min-width: 768px)" />
-              <source srcset="./images/mobile/olha-mobile.jpg 1x, ./images/mobile/olha-mobile@2x.jpg 2x"
-                media="(min-width: 280px)" />
+              <source srcset="
+                                ./images/tablet/mykola-tablet.jpg    1x,
+                                ./images/tablet/mykola-tablet@2x.jpg 2x
+                              " media="(min-width: 768px)" />
+              <source srcset="
+                                ./images/mobile/mykola-mobile.jpg    1x,
+                                ./images/mobile/mykola-mobile@2x.jpg 2x
+                              " media="(min-width: 280px)" />
+
               <img
-                  src="./images/mobile/olha-mobile.jpg"
-                  alt="man"
-                  width="270"
-                  height="260"
-                  class="team__img"
-                />
+                              class="teammate__img"
+                              src="./images/mobile/mykhailo-mobile.jpg"
+                              alt="This is Mykola"
+                            />
             </picture>
 
             <div class="team__container">
@@ -378,24 +440,22 @@
           </li>
           <li class="team__thumb">
             <picture>
-              <source srcset="./images/Desktop/mykola.jpg 1x, ./images/Desktop/mykola@2x.jpg 2x"
+              <source srcset="./images/Desktop/mykhailo.jpg 1x, ./images/Desktop/mykhailo@2x.jpg 2x"
                 media="(min-width: 1200px)" />
               <source srcset="
-                    ./images/tablet/mykola-tablet.jpg    1x,
-                    ./images/tablet/mykola-tablet@2x.jpg 2x
-                  " media="(min-width: 768px)" />
+                                ./images/tablet/mykhailo-tablet.jpg    1x,
+                                ./images/tablet/mykhailo-tablet@2x.jpg 2x
+                              " media="(min-width: 768px)" />
               <source srcset="
-                    ./images/mobile/mykola-mobile.jpg    1x,
-                    ./images/mobile/mykola-mobile@2x.jpg 2x
-                  " media="(min-width: 280px)" />
+                                ./images/mobile/mykhailo-mobile.jpg    1x,
+                                ./images/mobile/mykhailo-mobile@2x.jpg 2x
+                              " media="(min-width: 280px)" />
 
               <img
-                  src="./images/man_3.jpg"
-                  alt="man"
-                  width="270"
-                  height="260"
-                  class="team__img"
-                />
+                              class="teammate__img"
+                              src="./images/mobile/mykhailo-mobile.jpg"
+                              alt="This is Mykhailo"
+                            />
             </picture>
             <div class="team__container">
               <h3 class="team__name">Михайло Єрмаков</h3>
@@ -538,6 +598,7 @@
     </div>
   </footer>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
